@@ -1,0 +1,78 @@
+[
+  {
+    "architecture": "vit_base_patch16_224",
+    "data_type": "original",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9940740740740741,
+      "no_fg": 0.7397530864197531,
+      "mixed_same": 0.9686419753086419,
+      "mixed_rand": 0.914074074074074
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.7397530864197531,
+      "bg_gap": 0.054567901234567895,
+      "original_accuracy": 0.9940740740740741
+    },
+    "final_val_accuracy": 0.9914641203703703,
+    "epochs_run": 4
+  },
+  {
+    "architecture": "vit_base_patch16_224",
+    "data_type": "original",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9923456790123457,
+      "no_fg": 0.7745679012345679,
+      "mixed_same": 0.965679012345679,
+      "mixed_rand": 0.9150617283950617
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.7745679012345679,
+      "bg_gap": 0.050617283950617264,
+      "original_accuracy": 0.9923456790123457
+    },
+    "final_val_accuracy": 0.9910300925925926,
+    "epochs_run": 3
+  },
+  {
+    "architecture": "vit_base_patch16_224",
+    "data_type": "augmented",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9903703703703703,
+      "no_fg": 0.5649382716049383,
+      "mixed_same": 0.9622222222222222,
+      "mixed_rand": 0.9590123456790124
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5649382716049383,
+      "bg_gap": 0.003209876543209811,
+      "original_accuracy": 0.9903703703703703
+    },
+    "final_val_accuracy": 0.98046875,
+    "epochs_run": 4
+  },
+  {
+    "architecture": "vit_base_patch16_224",
+    "data_type": "augmented",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9874074074074074,
+      "no_fg": 0.6254320987654322,
+      "mixed_same": 0.9617283950617284,
+      "mixed_rand": 0.9471604938271605
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6254320987654322,
+      "bg_gap": 0.01456790123456786,
+      "original_accuracy": 0.9874074074074074
+    },
+    "final_val_accuracy": 0.9817708333333334,
+    "epochs_run": 3
+  }
+]

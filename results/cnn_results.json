@@ -1,0 +1,78 @@
+[
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9869135802469136,
+      "no_fg": 0.5995061728395061,
+      "mixed_same": 0.9530864197530864,
+      "mixed_rand": 0.9125925925925926
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5995061728395061,
+      "bg_gap": 0.04049382716049377,
+      "original_accuracy": 0.9869135802469136
+    },
+    "final_val_accuracy": 0.9917534722222222,
+    "epochs_run": 10
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9879012345679012,
+      "no_fg": 0.6723456790123457,
+      "mixed_same": 0.9553086419753086,
+      "mixed_rand": 0.9069135802469136
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6723456790123457,
+      "bg_gap": 0.04839506172839503,
+      "original_accuracy": 0.9879012345679012
+    },
+    "final_val_accuracy": 0.9877025462962963,
+    "epochs_run": 5
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9785185185185186,
+      "no_fg": 0.5908641975308642,
+      "mixed_same": 0.9469135802469136,
+      "mixed_rand": 0.9081481481481481
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5908641975308642,
+      "bg_gap": 0.038765432098765484,
+      "original_accuracy": 0.9785185185185186
+    },
+    "final_val_accuracy": 0.9762731481481481,
+    "epochs_run": 3
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9767901234567902,
+      "no_fg": 0.5995061728395061,
+      "mixed_same": 0.9491358024691358,
+      "mixed_rand": 0.9079012345679013
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5995061728395061,
+      "bg_gap": 0.041234567901234476,
+      "original_accuracy": 0.9767901234567902
+    },
+    "final_val_accuracy": 0.9765625,
+    "epochs_run": 3
+  }
+]
