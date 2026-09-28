@@ -8,6 +8,8 @@ from pytorch_grad_cam.utils.image import show_cam_on_image
 IMAGENET_MEAN = torch.tensor([0.485, 0.456, 0.406]).view(3, 1, 1)
 IMAGENET_STD = torch.tensor([0.229, 0.224, 0.225]).view(3, 1, 1)
 
+# https://jacobgil.github.io/pytorch-gradcam-book/introduction.html
+
 def denormalise(normalised_tensor):
     return (normalised_tensor * IMAGENET_STD + IMAGENET_MEAN).clamp(0, 1)
 
