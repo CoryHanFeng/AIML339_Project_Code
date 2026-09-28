@@ -17,4 +17,7 @@ The runs folder contains the results of each experiment of the model.
 - Training Loss
 - Validation Loss
 
+## Data Preparation
+In order to re-train this model, the following data should be installed
+LOC-train-solution.csv - Should be inside the project directory
 
