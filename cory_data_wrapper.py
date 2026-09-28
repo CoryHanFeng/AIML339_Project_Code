@@ -12,8 +12,15 @@ from torchvision.datasets import ImageFolder
 from torchvision.transforms.functional import to_tensor
 from PIL import Image
 
+
+IMAGENET_MEAN = (0.485, 0.456, 0.406)
+IMAGENET_STD = (0.229, 0.224, 0.225)
+VIT_MEAN = (0.5, 0.5, 0.5)
+VIT_STD = (0.5, 0.5, 0.5)
+
 try:
     import cv2
+    cv2.setNumThreads(0)
 except ImportError:
     cv2 = None
 
@@ -116,17 +123,16 @@ def grabcut_mask_from_bbox(image_tensor, bbox, iterations=2, dilation_px=4, min_
 class BackgroundRandomizationDataset(Dataset):
     """Wraps IN9BoundingBoxDataset and swaps backgrounds with probability = augmentation_strength."""
 
-    IMGNETMEAN = torch.tensor([0.485, 0.456, 0.406]).view(3,1,1)
-    IMGNETSTD = torch.tensor([0.229, 0.224, 0.225]).view(3,1,1)
-
     def __init__(self, base_dataset, augmentation_strength=1.0, seed=None,
-                 min_donor_background_fraction=0.3, use_grabcut=True):
+                 min_donor_background_fraction=0.3, use_grabcut=True, mean = IMAGENET_MEAN, std = IMAGENET_STD):
         assert 0.0 <= augmentation_strength <= 1.0
         self.base_dataset = base_dataset
         self.strength = augmentation_strength
         self.rng = random.Random(seed)
         self.min_donor_background_fraction = min_donor_background_fraction
         self.use_grabcut = use_grabcut
+        self.mean = torch.tensor(mean).view(3, 1, 1)
+        self.std = torch.tensor(std).view(3, 1, 1)
 
     def __len__(self):
         return len(self.base_dataset)
@@ -163,18 +169,24 @@ class BackgroundRandomizationDataset(Dataset):
         return self._normalise(composited), label
 
     def _normalise(self,image):
-        return( image - self.IMGNETMEAN ) / self.IMGNETSTD
+        return( image - self.mean ) / self.std
+
+def _seed_worker(worker_id):
+    info = torch.utils.data.get_worker_info()
+    if isinstance(info.dataset, BackgroundRandomizationDataset):
+        info.dataset.rng.seed(info.seed
+                              )
 
 class ImageFolderEval(Dataset):
     """loader for the IN-9 test variant folders (w/ no bounding boxes)."""
 
-    def __init__(self, root_dir, image_size=224):
+    def __init__(self, root_dir, image_size=224, mean = IMAGENET_MEAN, std = IMAGENET_STD):
         folder = ImageFolder(root_dir)
         self.classes, self.class_to_idx, self.samples = folder.classes, folder.class_to_idx, folder.samples
         self.transform = transforms.Compose([
             transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),
-            transforms.Normalize(mean= [0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+            transforms.Normalize(mean= list(mean), std = list(std))
         ])
 
     def __len__(self):
@@ -208,11 +220,10 @@ def _collate_drop_bbox(batch):
     return images, labels
 
 
-def make_loader(dataset, batch_size=32, shuffle=True, num_workers=4):
+def make_loader(dataset, batch_size=32, shuffle=True, num_workers=4, persistent_workers=False):
     """DataLoader that drops the bbox from 3-tuple datasets so batches are (images, labels)."""
     collate = _collate_drop_bbox if _dataset_returns_bbox(dataset) else None
-    return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle,
-                      num_workers=num_workers, pin_memory=True, collate_fn=collate)
+    return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, collate_fn=collate, worker_init_fn=_seed_worker ,persistent_workers= persistent_workers and num_workers >0)
 
 
 ## FIX FOR DATA FOLDER LABEL INCONSISTENCIES

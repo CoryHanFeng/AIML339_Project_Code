@@ -10,8 +10,15 @@ import torch
 import numpy as np
 from PIL import Image
 
-from cory_gradcam_ import denormalise, IMAGENET_MEAN, IMAGENET_STD
+from cory_data_wrapper import VIT_MEAN, VIT_STD
 from pytorch_grad_cam.utils.image import show_cam_on_image
+
+
+VIT_MEAN_TENSOR = torch.tensor(VIT_MEAN).view(3, 1, 1)
+VIT_STD_TENSOR = torch.tensor(VIT_STD).view(3, 1, 1)
+
+def denormalise_vit(normalised_tensor):
+    return (normalised_tensor.cpu() * VIT_STD_TENSOR + VIT_MEAN_TENSOR).clamp(0, 1)
 
 def get_vit_attention_rollout(model, normalised_image_tensor, device="cpu", discard_ratio=0.0):
     """
@@ -80,6 +87,6 @@ def get_vit_attention_rollout(model, normalised_image_tensor, device="cpu", disc
         attention_grid_tensor, size=(H, W), mode="bilinear", align_corners=False
     )[0, 0].numpy()
     # Overlay on original denormalised image
-    original_image = denormalise(normalised_image_tensor).permute(1, 2, 0).cpu().numpy()
+    original_image = denormalise_vit(normalised_image_tensor).permute(1, 2, 0).cpu().numpy()
     overlay = show_cam_on_image(original_image, heatmap, use_rgb=True)
     return overlay, predicted_class
