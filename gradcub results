@@ -1,0 +1,5 @@
+Sampled 62208 images:
+  Background swap actually applied: 62180/62208 (100.0%)
+  Silently unchanged (all 5 donors rejected): 28/62208 (0.0%)
+  GrabCut succeeded: 52329/62208 (84.1%)
+  GrabCut fell back to bbox: 9879/62208 (15.9%)

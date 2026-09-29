@@ -4,3 +4,4 @@ __pycache__/
 runs/
 .idea/
 .Rhistory
+LOC_train_solution.csv
