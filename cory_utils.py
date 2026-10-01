@@ -35,7 +35,7 @@ class CNNModel(nn.Module):
 # Create the class for the Vision Transformer
 class ViTModel(nn.Module):
     """ViT base 16 pretrained"""
-    def __init__(self, arch_name="vit_base_patch16_224", num_classes=9, pretrained=True):
+    def __init__(self, arch_name="vit_base_patch16_224.augreg_in1k", num_classes=9, pretrained=True):
         super().__init__()
         import timm
         self.backbone = timm.create_model(arch_name, pretrained=pretrained, num_classes=num_classes)
@@ -162,10 +162,11 @@ def train_model(model, train_loader, val_loader, device, epochs = 10,
         model.load_state_dict(best_state_dict)
     return model.to(device), history
 
-def hyperparameter_search(make_model, train_loader, val_loader,device,
-                          learning_rates=(1e-5, 3e-5, 1e-4), search_epochs=3,
-                          warmup_fraction=0.1, verbose=True, log_dir=None):
-    """train the model on each learning rate for 3 epochs return the best model and use that learning rate"""
+def hyperparameter_search(make_model, train_loader, val_loader,device, learning_rates=(2.5e-5, 5e-5, 1e-4), search_epochs=3, warmup_fraction=0.1, verbose=True, log_dir=None):
+    """
+    train the model on each learning rate for 3 epochs return the best model and use that learning rate
+
+    """
     trials = []
     best_lr =None
     best_val_acc = -1.0

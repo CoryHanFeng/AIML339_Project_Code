@@ -5,8 +5,7 @@ import re
 
 import numpy as np
 import torch
-from sklearn.model_selection import train_test_split
-from torch.utils.data import Dataset, DataLoader, Subset
+from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 from torchvision.transforms.functional import to_tensor
@@ -125,7 +124,6 @@ class BackgroundRandomizationDataset(Dataset):
 
     def __init__(self, base_dataset, augmentation_strength=1.0, seed=None,
                  min_donor_background_fraction=0.3, use_grabcut=True, mean = IMAGENET_MEAN, std = IMAGENET_STD):
-        assert 0.0 <= augmentation_strength <= 1.0
         self.base_dataset = base_dataset
         self.strength = augmentation_strength
         self.rng = random.Random(seed)
@@ -174,8 +172,7 @@ class BackgroundRandomizationDataset(Dataset):
 def _seed_worker(worker_id):
     info = torch.utils.data.get_worker_info()
     if isinstance(info.dataset, BackgroundRandomizationDataset):
-        info.dataset.rng.seed(info.seed
-                              )
+        info.dataset.rng.seed(info.seed)
 
 class ImageFolderEval(Dataset):
     """loader for the IN-9 test variant folders (w/ no bounding boxes)."""
@@ -197,21 +194,11 @@ class ImageFolderEval(Dataset):
         img = Image.open(path).convert("RGB")
         return self.transform(img), label
 
-def stratified_train_val_split(dataset, val_fraction=0.1, seed=0):
-    """Split into train/val subsets, stratified by class so val stays balanced."""
-    labels = [label for _, label in dataset.samples]
-    indices = list(range(len(labels)))
-    train_indices, val_indices = train_test_split(
-        indices, test_size=val_fraction, stratify=labels, random_state=seed
-    )
-    return Subset(dataset, train_indices), Subset(dataset, val_indices)
-
 def _dataset_returns_bbox(dataset):
     # look at how much the first instance of the dataset returns
     if len(dataset) == 0:
         return False
     return len(dataset[0]) == 3
-
 
 def _collate_drop_bbox(batch):
     # build the batch
@@ -219,84 +206,25 @@ def _collate_drop_bbox(batch):
     labels = torch.tensor([b[1] for b in batch])
     return images, labels
 
-
 def make_loader(dataset, batch_size=32, shuffle=True, num_workers=4, persistent_workers=False):
     """DataLoader that drops the bbox from 3-tuple datasets so batches are (images, labels)."""
     collate = _collate_drop_bbox if _dataset_returns_bbox(dataset) else None
     return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=num_workers, pin_memory=True, collate_fn=collate, worker_init_fn=_seed_worker ,persistent_workers= persistent_workers and num_workers >0)
 
-
 ## FIX FOR DATA FOLDER LABEL INCONSISTENCIES
-# Generative AI was used to help make this
+test_class_mapping = ["Dog", "Bird", "Vehicle", "Reptile", "Carnivore", "Insect", "Instrument", "Primate", "Fish"]
 
-TEST_FOLDER_NAME_TO_TRAIN_CLASS = {
-    "dog": "Dog", "bird": "Bird", "wheeled vehicle": "Vehicle",
-    "reptile": "Reptile", "carnivore": "Carnivore", "insect": "Insect",
-    "musical instrument": "Instrument", "primate": "Primate", "fish": "Fish",
-}
-
-def fix_test_labels(test_dataset, train_class_to_idx):
+def fix_test_labels(test_set, train_class_to_idx):
     """
-    Fixes the test set labels, the test set has different name prefixes that give different label order than the training folder.
-    This function rewrites the labels to match the training label order to prevent inaccurate model results.
+    Relabel the test dataset to match the training and validation dataset
+    each test label is turned into its class name and then into the training label number (00_dog = 0 in test, but in train_class_to_idx it is 2, so relabel it into 2)
     """
-    old_idx_to_name = {v: k for k, v in test_dataset.class_to_idx.items()}
-    remap = {}
-    for old_idx, folder_name in old_idx_to_name.items():
-        fragment = re.sub(r"^\d+_", "", folder_name).lower()
-        train_class = TEST_FOLDER_NAME_TO_TRAIN_CLASS[fragment]
-        remap[old_idx] = train_class_to_idx[train_class]
+    test_set.samples = [(path, train_class_to_idx[test_class_mapping[label]]) for path, label in test_set.samples]
+    test_set.class_to_idx = train_class_to_idx
 
-    test_dataset.samples = [(path, remap[label]) for path, label in test_dataset.samples]
-    test_dataset.class_to_idx = train_class_to_idx
-    return test_dataset
-
-
-if __name__ == "__main__":
-    # Create a fake folder, that has the exact same structure as the original dataset, just for matching to ensure that the test works.
-    class FakeImageFolderEval:
-        def __init__(self, root):
-            classes = sorted(os.listdir(root))
-            self.class_to_idx = {c: i for i, c in enumerate(classes)}
-            self.samples = []
-            for c in classes:
-                for fname in os.listdir(os.path.join(root, c)):
-                    self.samples.append((os.path.join(root, c, fname), self.class_to_idx[c]))
-
-
-    fake_test_folders = {
-        "00_dog": "Dog", "01_bird": "Bird", "02_wheeled vehicle": "Vehicle",
-        "03_reptile": "Reptile", "04_carnivore": "Carnivore", "05_insect": "Insect",
-        "06_musical instrument": "Instrument", "07_primate": "Primate", "08_fish": "Fish",
-    }
-    root = "fake_test_short"
-    for folder_name in fake_test_folders:
-        os.makedirs(os.path.join(root, folder_name), exist_ok=True)
-        open(os.path.join(root, folder_name, "img_0.JPEG"), "w").close()
-
-    train_class_to_idx = {
-        'Bird': 0, 'Carnivore': 1, 'Dog': 2, 'Fish': 3, 'Insect': 4,'Instrument': 5, 'Primate': 6, 'Reptile': 7, 'Vehicle': 8
-    }
-    # test if the mapping worked
-    test_ds = FakeImageFolderEval(root)
-    print(f"before fix, class_to_idx: {test_ds.class_to_idx}\n")
-
-    fix_test_labels(test_ds, train_class_to_idx)
-    print(f"after fix, class_to_idx: {test_ds.class_to_idx}\n")
-
-    all_correct = True
-    for path, label in test_ds.samples:
-        folder_name = os.path.basename(os.path.dirname(path))
-        expected_class = fake_test_folders[folder_name]
-        expected_label = train_class_to_idx[expected_class]
-        status = "good" if label == expected_label else "error, does not match"
-        if label != expected_label:
-            all_correct = False
-        print(f"  {folder_name:<25} -> label {label} (expected {expected_label})  {status}")
-
-    assert all_correct, "did not fix all test labels"
-    print("\nall test labels fixed successfully.")
-
-
-
-
+    # Check the result
+    idx_to_class = {idx: name for name, idx in train_class_to_idx.items()}
+    for path, label in test_set.samples:
+        folder = os.path.basename(os.path.dirname(path))
+        assert idx_to_class[label].lower() in folder.lower(), f"Test label: {label} does not match folder: {folder}"
+    return test_set
