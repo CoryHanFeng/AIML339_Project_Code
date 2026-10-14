@@ -1,0 +1,198 @@
+5654 different photos are behind the test variants, 4050 of them as the object photo
+1935 validation photos are checked as well, 0 of them also behind the test variants
+Found 7589 of them in the zip's validation folder, 0 missing
+Found 1281167 training images in the zip
+  2000/1281167 checked, about 7 minutes left
+  52000/1281167 checked, about 7 minutes left
+  102000/1281167 checked, about 7 minutes left
+  152000/1281167 checked, about 7 minutes left
+  202000/1281167 checked, about 7 minutes left
+  252000/1281167 checked, about 6 minutes left
+  302000/1281167 checked, about 6 minutes left
+  352000/1281167 checked, about 5 minutes left
+  402000/1281167 checked, about 5 minutes left
+  452000/1281167 checked, about 5 minutes left
+  502000/1281167 checked, about 5 minutes left
+  552000/1281167 checked, about 4 minutes left
+  602000/1281167 checked, about 4 minutes left
+  652000/1281167 checked, about 4 minutes left
+  702000/1281167 checked, about 3 minutes left
+  752000/1281167 checked, about 3 minutes left
+  802000/1281167 checked, about 3 minutes left
+  852000/1281167 checked, about 3 minutes left
+  902000/1281167 checked, about 2 minutes left
+  952000/1281167 checked, about 2 minutes left
+  1002000/1281167 checked, about 2 minutes left
+  1052000/1281167 checked, about 1 minutes left
+  1102000/1281167 checked, about 1 minutes left
+  1152000/1281167 checked, about 1 minutes left
+  1202000/1281167 checked, about 0 minutes left
+  1252000/1281167 checked, about 0 minutes left
+166 of 7589 photos have a near-duplicate among the 1281167 training images
+photos by distance: {0.005: 158, 0.01: 160, 0.02: 162, 0.03: 166, 0.05: 179}
+  ILSVRC2012_val_00040677 (object photo) Data/CLS-LOC/train/n02115641/n02115641_4977.JPEG -0.0
+  ILSVRC2012_val_00041640 (object photo) Data/CLS-LOC/train/n01693334/n01693334_6734.JPEG -0.0
+  ILSVRC2012_val_00011039 (validation photo) Data/CLS-LOC/train/n02483708/n02483708_8328.JPEG -0.0
+  ILSVRC2012_val_00046855 (object photo) Data/CLS-LOC/train/n03785016/n03785016_3506.JPEG -0.0
+  ILSVRC2012_val_00016449 (validation photo) Data/CLS-LOC/train/n04536866/n04536866_6108.JPEG -0.0
+  ILSVRC2012_val_00026043 (validation photo) Data/CLS-LOC/train/n02483362/n02483362_9939.JPEG -0.0
+  ILSVRC2012_val_00037339 (background photo only) Data/CLS-LOC/train/n02096294/n02096294_9880.JPEG -0.0
+  ILSVRC2012_val_00010077 (validation photo) Data/CLS-LOC/train/n02488291/n02488291_2144.JPEG -0.0
+  ILSVRC2012_val_00014518 (background photo only) Data/CLS-LOC/train/n03838899/n03838899_34131.JPEG -0.0
+  ILSVRC2012_val_00027905 (validation photo) Data/CLS-LOC/train/n02108000/n02108000_5590.JPEG -0.0
+  ILSVRC2012_val_00029021 (object photo) Data/CLS-LOC/train/n04037443/n04037443_14526.JPEG -0.0
+  ILSVRC2012_val_00039749 (object photo) Data/CLS-LOC/train/n01693334/n01693334_2905.JPEG -0.0
+  ILSVRC2012_val_00003445 (validation photo) Data/CLS-LOC/train/n02486261/n02486261_3784.JPEG -0.0
+  ILSVRC2012_val_00017666 (object photo) Data/CLS-LOC/train/n02442845/n02442845_3065.JPEG -0.0
+  ILSVRC2012_val_00021093 (object photo) Data/CLS-LOC/train/n01742172/n01742172_2931.JPEG -0.0
+  ILSVRC2012_val_00030562 (background photo only) Data/CLS-LOC/train/n01739381/n01739381_6376.JPEG -0.0
+  ILSVRC2012_val_00035368 (object photo) Data/CLS-LOC/train/n02128925/n02128925_8131.JPEG -0.0
+  ILSVRC2012_val_00001636 (validation photo) Data/CLS-LOC/train/n01669191/n01669191_8981.JPEG -0.0
+  ILSVRC2012_val_00007707 (object photo) Data/CLS-LOC/train/n03017168/n03017168_21399.JPEG -0.0
+  ILSVRC2012_val_00008429 (object photo) Data/CLS-LOC/train/n03017168/n03017168_53530.JPEG -0.0
+  ILSVRC2012_val_00014308 (object photo) Data/CLS-LOC/train/n01693334/n01693334_2944.JPEG -0.0
+  ILSVRC2012_val_00015529 (background photo only) Data/CLS-LOC/train/n02483362/n02483362_1715.JPEG -0.0
+  ILSVRC2012_val_00022557 (object photo) Data/CLS-LOC/train/n02403003/n02403003_4316.JPEG -0.0
+  ILSVRC2012_val_00023153 (background photo only) Data/CLS-LOC/train/n03017168/n03017168_27811.JPEG -0.0
+  ILSVRC2012_val_00031205 (object photo) Data/CLS-LOC/train/n03447721/n03447721_23111.JPEG -0.0
+  ILSVRC2012_val_00039141 (object photo) Data/CLS-LOC/train/n03017168/n03017168_65851.JPEG -0.0
+  ILSVRC2012_val_00043521 (validation photo) Data/CLS-LOC/train/n02441942/n02441942_22733.JPEG -0.0
+  ILSVRC2012_val_00048574 (object photo) Data/CLS-LOC/train/n01749939/n01749939_3007.JPEG -0.0
+  ILSVRC2012_val_00002101 (validation photo) Data/CLS-LOC/train/n01749939/n01749939_5700.JPEG -0.0
+  ILSVRC2012_val_00007760 (background photo only) Data/CLS-LOC/train/n02443484/n02443484_13282.JPEG -0.0
+  ILSVRC2012_val_00029361 (object photo) Data/CLS-LOC/train/n02119789/n02119789_14913.JPEG -0.0
+  ILSVRC2012_val_00036786 (background photo only) Data/CLS-LOC/train/n03832673/n03832673_15169.JPEG -0.0
+  ILSVRC2012_val_00045980 (object photo) Data/CLS-LOC/train/n02108000/n02108000_6512.JPEG -0.0
+  ILSVRC2012_val_00000124 (object photo) Data/CLS-LOC/train/n02655020/n02655020_14046.JPEG -0.0
+  ILSVRC2012_val_00000125 (validation photo) Data/CLS-LOC/train/n02229544/n02229544_6044.JPEG -0.0
+  ILSVRC2012_val_00001052 (object photo) Data/CLS-LOC/train/n03017168/n03017168_33585.JPEG -0.0
+  ILSVRC2012_val_00001509 (object photo) Data/CLS-LOC/train/n02441942/n02441942_7514.JPEG -0.0
+  ILSVRC2012_val_00002952 (validation photo) Data/CLS-LOC/train/n03017168/n03017168_58547.JPEG -0.0
+  ILSVRC2012_val_00013754 (validation photo) Data/CLS-LOC/train/n02492035/n02492035_5358.JPEG -0.0
+  ILSVRC2012_val_00014833 (object photo) Data/CLS-LOC/train/n02441942/n02441942_21398.JPEG -0.0
+  ILSVRC2012_val_00021717 (validation photo) Data/CLS-LOC/train/n02814533/n02814533_12546.JPEG -0.0
+  ILSVRC2012_val_00023673 (background photo only) Data/CLS-LOC/train/n02443114/n02443114_5926.JPEG -0.0
+  ILSVRC2012_val_00032524 (background photo only) Data/CLS-LOC/train/n02097209/n02097209_5249.JPEG -0.0
+  ILSVRC2012_val_00035493 (object photo) Data/CLS-LOC/train/n02493509/n02493509_16274.JPEG -0.0
+  ILSVRC2012_val_00035564 (validation photo) Data/CLS-LOC/train/n02483362/n02483362_1966.JPEG -0.0
+  ILSVRC2012_val_00037187 (object photo) Data/CLS-LOC/train/n01749939/n01749939_2496.JPEG -0.0
+  ILSVRC2012_val_00037219 (object photo) Data/CLS-LOC/train/n02484975/n02484975_3080.JPEG -0.0
+  ILSVRC2012_val_00039302 (object photo) Data/CLS-LOC/train/n02494079/n02494079_1946.JPEG -0.0
+  ILSVRC2012_val_00042299 (validation photo) Data/CLS-LOC/train/n02168699/n02168699_5980.JPEG -0.0
+  ILSVRC2012_val_00045606 (object photo) Data/CLS-LOC/train/n02128385/n02128385_14635.JPEG -0.0
+  ILSVRC2012_val_00046570 (object photo) Data/CLS-LOC/train/n02280649/n02280649_8597.JPEG -0.0
+  ILSVRC2012_val_00007991 (object photo) Data/CLS-LOC/train/n01753488/n01753488_10876.JPEG -0.0
+  ILSVRC2012_val_00010074 (object photo) Data/CLS-LOC/train/n01484850/n01484850_24294.JPEG -0.0
+  ILSVRC2012_val_00014771 (object photo) Data/CLS-LOC/train/n01496331/n01496331_19901.JPEG -0.0
+  ILSVRC2012_val_00016165 (object photo) Data/CLS-LOC/train/n04515003/n04515003_14350.JPEG -0.0
+  ILSVRC2012_val_00016283 (validation photo) Data/CLS-LOC/train/n02137549/n02137549_6262.JPEG -0.0
+  ILSVRC2012_val_00024178 (validation photo) Data/CLS-LOC/train/n02097209/n02097209_1218.JPEG -0.0
+  ILSVRC2012_val_00024628 (background photo only) Data/CLS-LOC/train/n04487081/n04487081_13101.JPEG -0.0
+  ILSVRC2012_val_00025668 (object photo) Data/CLS-LOC/train/n01693334/n01693334_5166.JPEG -0.0
+  ILSVRC2012_val_00028042 (validation photo) Data/CLS-LOC/train/n01693334/n01693334_8937.JPEG -0.0
+  ILSVRC2012_val_00039530 (object photo) Data/CLS-LOC/train/n01735189/n01735189_10595.JPEG -0.0
+  ILSVRC2012_val_00041286 (object photo) Data/CLS-LOC/train/n02114855/n02114855_10487.JPEG -0.0
+  ILSVRC2012_val_00048756 (object photo) Data/CLS-LOC/train/n02115913/n02115913_3818.JPEG -0.0
+  ILSVRC2012_val_00004592 (object photo) Data/CLS-LOC/train/n03017168/n03017168_54859.JPEG 0.0
+  ILSVRC2012_val_00006668 (object photo) Data/CLS-LOC/train/n02120505/n02120505_12054.JPEG 0.0
+  ILSVRC2012_val_00007710 (validation photo) Data/CLS-LOC/train/n01749939/n01749939_3847.JPEG 0.0
+  ILSVRC2012_val_00007773 (background photo only) Data/CLS-LOC/train/n02108000/n02108000_4043.JPEG 0.0
+  ILSVRC2012_val_00011032 (validation photo) Data/CLS-LOC/train/n02492660/n02492660_4551.JPEG 0.0
+  ILSVRC2012_val_00034279 (background photo only) Data/CLS-LOC/train/n02114712/n02114712_6497.JPEG 0.0
+  ILSVRC2012_val_00036910 (validation photo) Data/CLS-LOC/train/n01756291/n01756291_19543.JPEG 0.0
+  ILSVRC2012_val_00037565 (validation photo) Data/CLS-LOC/train/n02494079/n02494079_7219.JPEG 0.0
+  ILSVRC2012_val_00039583 (object photo) Data/CLS-LOC/train/n02500267/n02500267_3820.JPEG 0.0
+  ILSVRC2012_val_00045444 (background photo only) Data/CLS-LOC/train/n02492660/n02492660_648.JPEG 0.0
+  ILSVRC2012_val_00048220 (object photo) Data/CLS-LOC/train/n03496892/n03496892_23271.JPEG 0.0
+  ILSVRC2012_val_00003170 (background photo only) Data/CLS-LOC/train/n02483362/n02483362_18.JPEG 0.0
+  ILSVRC2012_val_00006388 (validation photo) Data/CLS-LOC/train/n03017168/n03017168_75602.JPEG 0.0
+  ILSVRC2012_val_00007054 (validation photo) Data/CLS-LOC/train/n02108000/n02108000_5319.JPEG 0.0
+  ILSVRC2012_val_00010239 (object photo) Data/CLS-LOC/train/n03017168/n03017168_16274.JPEG 0.0
+  ILSVRC2012_val_00018723 (object photo) Data/CLS-LOC/train/n03017168/n03017168_40864.JPEG 0.0
+  ILSVRC2012_val_00021069 (validation photo) Data/CLS-LOC/train/n01693334/n01693334_2323.JPEG 0.0
+  ILSVRC2012_val_00024104 (object photo) Data/CLS-LOC/train/n03017168/n03017168_5320.JPEG 0.0
+  ILSVRC2012_val_00026757 (background photo only) Data/CLS-LOC/train/n02493509/n02493509_13178.JPEG 0.0
+  ILSVRC2012_val_00033392 (object photo) Data/CLS-LOC/train/n01740131/n01740131_10158.JPEG 0.0
+  ILSVRC2012_val_00036622 (validation photo) Data/CLS-LOC/train/n02128385/n02128385_6919.JPEG 0.0
+  ILSVRC2012_val_00041068 (object photo) Data/CLS-LOC/train/n03017168/n03017168_50403.JPEG 0.0
+  ILSVRC2012_val_00048486 (validation photo) Data/CLS-LOC/train/n02108000/n02108000_3841.JPEG 0.0
+  ILSVRC2012_val_00002154 (object photo) Data/CLS-LOC/train/n01740131/n01740131_10643.JPEG 0.0
+  ILSVRC2012_val_00014768 (validation photo) Data/CLS-LOC/train/n01693334/n01693334_15242.JPEG 0.0
+  ILSVRC2012_val_00041280 (object photo) Data/CLS-LOC/train/n03017168/n03017168_16993.JPEG 0.0
+  ILSVRC2012_val_00003458 (validation photo) Data/CLS-LOC/train/n02443114/n02443114_4694.JPEG 0.0
+  ILSVRC2012_val_00004898 (object photo) Data/CLS-LOC/train/n01667778/n01667778_4157.JPEG 0.0
+  ILSVRC2012_val_00006092 (object photo) Data/CLS-LOC/train/n02114367/n02114367_17167.JPEG 0.0
+  ILSVRC2012_val_00025470 (object photo) Data/CLS-LOC/train/n02483362/n02483362_1155.JPEG 0.0
+  ILSVRC2012_val_00031517 (object photo) Data/CLS-LOC/train/n02447366/n02447366_4950.JPEG 0.0
+  ILSVRC2012_val_00031916 (validation photo) Data/CLS-LOC/train/n02483362/n02483362_2455.JPEG 0.0
+  ILSVRC2012_val_00032202 (background photo only) Data/CLS-LOC/train/n02443114/n02443114_2740.JPEG 0.0
+  ILSVRC2012_val_00033125 (object photo) Data/CLS-LOC/train/n01756291/n01756291_30213.JPEG 0.0
+  ILSVRC2012_val_00035166 (object photo) Data/CLS-LOC/train/n02493509/n02493509_6698.JPEG 0.0
+  ILSVRC2012_val_00045349 (validation photo) Data/CLS-LOC/train/n01749939/n01749939_1162.JPEG 0.0
+  ILSVRC2012_val_00016694 (object photo) Data/CLS-LOC/train/n02137549/n02137549_5784.JPEG 0.0
+  ILSVRC2012_val_00031073 (background photo only) Data/CLS-LOC/train/n02447366/n02447366_25525.JPEG 0.0
+  ILSVRC2012_val_00047000 (validation photo) Data/CLS-LOC/train/n01753488/n01753488_10841.JPEG 0.0
+  ILSVRC2012_val_00005979 (object photo) Data/CLS-LOC/train/n02119789/n02119789_10618.JPEG 0.0
+  ILSVRC2012_val_00007725 (object photo) Data/CLS-LOC/train/n02494079/n02494079_999.JPEG 0.0
+  ILSVRC2012_val_00010552 (background photo only) Data/CLS-LOC/train/n02509815/n02509815_3507.JPEG 0.0
+  ILSVRC2012_val_00010915 (background photo only) Data/CLS-LOC/train/n01669191/n01669191_11411.JPEG 0.0
+  ILSVRC2012_val_00018739 (background photo only) Data/CLS-LOC/train/n02494079/n02494079_980.JPEG 0.0
+  ILSVRC2012_val_00020464 (validation photo) Data/CLS-LOC/train/n02236044/n02236044_12875.JPEG 0.0
+  ILSVRC2012_val_00026287 (object photo) Data/CLS-LOC/train/n03017168/n03017168_19931.JPEG 0.0
+  ILSVRC2012_val_00028351 (background photo only) Data/CLS-LOC/train/n01693334/n01693334_3271.JPEG 0.0
+  ILSVRC2012_val_00028413 (object photo) Data/CLS-LOC/train/n02442845/n02442845_24355.JPEG 0.0
+  ILSVRC2012_val_00035161 (object photo) Data/CLS-LOC/train/n02113186/n02113186_13191.JPEG 0.0
+  ILSVRC2012_val_00041164 (validation photo) Data/CLS-LOC/train/n01693334/n01693334_12506.JPEG 0.0
+  ILSVRC2012_val_00045157 (background photo only) Data/CLS-LOC/train/n01693334/n01693334_10958.JPEG 0.0
+  ILSVRC2012_val_00008595 (object photo) Data/CLS-LOC/train/n01753488/n01753488_6994.JPEG 0.0
+  ILSVRC2012_val_00016181 (object photo) Data/CLS-LOC/train/n02206856/n02206856_4328.JPEG 0.0
+  ILSVRC2012_val_00046145 (object photo) Data/CLS-LOC/train/n02119022/n02119022_825.JPEG 0.0
+  ILSVRC2012_val_00046571 (validation photo) Data/CLS-LOC/train/n02483362/n02483362_3407.JPEG 0.0
+  ILSVRC2012_val_00012384 (object photo) Data/CLS-LOC/train/n02493509/n02493509_1392.JPEG 0.0
+  ILSVRC2012_val_00016512 (validation photo) Data/CLS-LOC/train/n02134084/n02134084_15366.JPEG 0.0
+  ILSVRC2012_val_00021730 (background photo only) Data/CLS-LOC/train/n02119022/n02119022_6175.JPEG 0.0
+  ILSVRC2012_val_00036420 (validation photo) Data/CLS-LOC/train/n01484850/n01484850_13503.JPEG 0.0
+  ILSVRC2012_val_00036448 (object photo) Data/CLS-LOC/train/n03017168/n03017168_4453.JPEG 0.0
+  ILSVRC2012_val_00036450 (object photo) Data/CLS-LOC/train/n02120505/n02120505_17442.JPEG 0.0
+  ILSVRC2012_val_00036461 (background photo only) Data/CLS-LOC/train/n02443114/n02443114_10812.JPEG 0.0
+  ILSVRC2012_val_00048244 (object photo) Data/CLS-LOC/train/n03017168/n03017168_64036.JPEG 0.0
+  ILSVRC2012_val_00018821 (validation photo) Data/CLS-LOC/train/n02119022/n02119022_1348.JPEG 0.0
+  ILSVRC2012_val_00022038 (object photo) Data/CLS-LOC/train/n03017168/n03017168_42371.JPEG 0.0
+  ILSVRC2012_val_00023263 (object photo) Data/CLS-LOC/train/n03017168/n03017168_32022.JPEG 0.0
+  ILSVRC2012_val_00048978 (object photo) Data/CLS-LOC/train/n01753488/n01753488_10885.JPEG 0.0
+  ILSVRC2012_val_00000229 (background photo only) Data/CLS-LOC/train/n01669191/n01669191_4683.JPEG 0.0
+  ILSVRC2012_val_00004569 (validation photo) Data/CLS-LOC/train/n02108000/n02108000_5799.JPEG 0.0
+  ILSVRC2012_val_00004765 (object photo) Data/CLS-LOC/train/n02169497/n02169497_6630.JPEG 0.0
+  ILSVRC2012_val_00014577 (validation photo) Data/CLS-LOC/train/n02804610/n02804610_28819.JPEG 0.0
+  ILSVRC2012_val_00023624 (background photo only) Data/CLS-LOC/train/n02165105/n02165105_827.JPEG 0.0
+  ILSVRC2012_val_00047061 (object photo) Data/CLS-LOC/train/n01753488/n01753488_11834.JPEG 0.0
+  ILSVRC2012_val_00049751 (background photo only) Data/CLS-LOC/train/n03124170/n03124170_1955.JPEG 0.0
+  ILSVRC2012_val_00028954 (validation photo) Data/CLS-LOC/train/n03110669/n03110669_89144.JPEG 0.0
+  ILSVRC2012_val_00029952 (object photo) Data/CLS-LOC/train/n04515003/n04515003_2859.JPEG 0.0
+  ILSVRC2012_val_00022378 (object photo) Data/CLS-LOC/train/n03017168/n03017168_38554.JPEG 0.0
+  ILSVRC2012_val_00002043 (object photo) Data/CLS-LOC/train/n03250847/n03250847_4117.JPEG 0.0
+  ILSVRC2012_val_00008947 (validation photo) Data/CLS-LOC/train/n02116738/n02116738_10409.JPEG 0.0
+  ILSVRC2012_val_00033890 (validation photo) Data/CLS-LOC/train/n02119022/n02119022_631.JPEG 0.0
+  ILSVRC2012_val_00041177 (object photo) Data/CLS-LOC/train/n03447721/n03447721_30860.JPEG 0.0
+  ILSVRC2012_val_00048255 (background photo only) Data/CLS-LOC/train/n02443484/n02443484_5827.JPEG 0.0
+  ILSVRC2012_val_00024429 (validation photo) Data/CLS-LOC/train/n02110185/n02110185_8555.JPEG 0.0
+  ILSVRC2012_val_00035044 (object photo) Data/CLS-LOC/train/n03017168/n03017168_33742.JPEG 0.0
+  ILSVRC2012_val_00022765 (validation photo) Data/CLS-LOC/train/n02264363/n02264363_7312.JPEG 0.0
+  ILSVRC2012_val_00021617 (object photo) Data/CLS-LOC/train/n01749939/n01749939_1025.JPEG 0.0
+  ILSVRC2012_val_00047520 (object photo) Data/CLS-LOC/train/n02486261/n02486261_9964.JPEG 0.0
+  ILSVRC2012_val_00005946 (object photo) Data/CLS-LOC/train/n02092002/n02092002_6914.JPEG 0.0
+  ILSVRC2012_val_00032720 (validation photo) Data/CLS-LOC/train/n02115913/n02115913_2311.JPEG 0.0001
+  ILSVRC2012_val_00036642 (object photo) Data/CLS-LOC/train/n03017168/n03017168_65364.JPEG 0.0002
+  ILSVRC2012_val_00013843 (object photo) Data/CLS-LOC/train/n02099429/n02099429_853.JPEG 0.0002
+  ILSVRC2012_val_00002501 (validation photo) Data/CLS-LOC/train/n02442845/n02442845_28954.JPEG 0.0004
+  ILSVRC2012_val_00014861 (object photo) Data/CLS-LOC/train/n02119022/n02119022_6285.JPEG 0.0004
+  ILSVRC2012_val_00039691 (object photo) Data/CLS-LOC/train/n02443114/n02443114_14733.JPEG 0.001
+  ILSVRC2012_val_00014694 (validation photo) Data/CLS-LOC/train/n02486261/n02486261_10473.JPEG 0.0023
+  ILSVRC2012_val_00011960 (object photo) Data/CLS-LOC/train/n03017168/n03017168_133.JPEG 0.005
+  ILSVRC2012_val_00045465 (validation photo) Data/CLS-LOC/train/n02119789/n02119789_11101.JPEG 0.0082
+  ILSVRC2012_val_00018381 (object photo) Data/CLS-LOC/train/n02119789/n02119789_9817.JPEG 0.0111
+  ILSVRC2012_val_00041770 (object photo) Data/CLS-LOC/train/n03017168/n03017168_20753.JPEG 0.0194
+  ILSVRC2012_val_00047055 (object photo) Data/CLS-LOC/train/n03447721/n03447721_39682.JPEG 0.0233
+  ILSVRC2012_val_00016347 (object photo) Data/CLS-LOC/train/n01496331/n01496331_13036.JPEG 0.0233
+  ILSVRC2012_val_00032682 (background photo only) Data/CLS-LOC/train/n01740131/n01740131_3271.JPEG 0.0258
+  ILSVRC2012_val_00039225 (background photo only) Data/CLS-LOC/train/n02486261/n02486261_2576.JPEG 0.0272

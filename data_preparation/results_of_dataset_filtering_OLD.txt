@@ -1,0 +1,59 @@
+C:\Users\minio\PycharmProjects\JupyterProject2\.venv\Scripts\python.exe C:\Users\minio\PycharmProjects\JupyterProject2\data_preparation\dataset_filtering.py
+validation: 49 photos were flagged, 49 of them found in data\rebuild\in9_val
+  Carnivore\ILSVRC2012_val_00002501.JPEG
+  Carnivore\ILSVRC2012_val_00003458.JPEG
+  Carnivore\ILSVRC2012_val_00008947.JPEG
+  Carnivore\ILSVRC2012_val_00016283.JPEG
+  Carnivore\ILSVRC2012_val_00016512.JPEG
+  Carnivore\ILSVRC2012_val_00018821.JPEG
+  Carnivore\ILSVRC2012_val_00032720.JPEG
+  Carnivore\ILSVRC2012_val_00033890.JPEG
+  Carnivore\ILSVRC2012_val_00036622.JPEG
+  Carnivore\ILSVRC2012_val_00043521.JPEG
+  Carnivore\ILSVRC2012_val_00045465.JPEG
+  Dog\ILSVRC2012_val_00004569.JPEG
+  Dog\ILSVRC2012_val_00007054.JPEG
+  Dog\ILSVRC2012_val_00024178.JPEG
+  Dog\ILSVRC2012_val_00024429.JPEG
+  Dog\ILSVRC2012_val_00027905.JPEG
+  Dog\ILSVRC2012_val_00048486.JPEG
+  Fish\ILSVRC2012_val_00036420.JPEG
+  Insect\ILSVRC2012_val_00000125.JPEG
+  Insect\ILSVRC2012_val_00020464.JPEG
+  Insect\ILSVRC2012_val_00022765.JPEG
+  Insect\ILSVRC2012_val_00042299.JPEG
+  Instrument\ILSVRC2012_val_00002952.JPEG
+  Instrument\ILSVRC2012_val_00006388.JPEG
+  Instrument\ILSVRC2012_val_00014577.JPEG
+  Instrument\ILSVRC2012_val_00016449.JPEG
+  Instrument\ILSVRC2012_val_00028954.JPEG
+  Primate\ILSVRC2012_val_00003445.JPEG
+  Primate\ILSVRC2012_val_00010077.JPEG
+  Primate\ILSVRC2012_val_00011032.JPEG
+  Primate\ILSVRC2012_val_00011039.JPEG
+  Primate\ILSVRC2012_val_00013754.JPEG
+  Primate\ILSVRC2012_val_00014694.JPEG
+  Primate\ILSVRC2012_val_00026043.JPEG
+  Primate\ILSVRC2012_val_00031916.JPEG
+  Primate\ILSVRC2012_val_00035564.JPEG
+  Primate\ILSVRC2012_val_00037565.JPEG
+  Primate\ILSVRC2012_val_00046571.JPEG
+  Reptile\ILSVRC2012_val_00001636.JPEG
+  Reptile\ILSVRC2012_val_00002101.JPEG
+  Reptile\ILSVRC2012_val_00007710.JPEG
+  Reptile\ILSVRC2012_val_00014768.JPEG
+  Reptile\ILSVRC2012_val_00021069.JPEG
+  Reptile\ILSVRC2012_val_00028042.JPEG
+  Reptile\ILSVRC2012_val_00036910.JPEG
+  Reptile\ILSVRC2012_val_00041164.JPEG
+  Reptile\ILSVRC2012_val_00045349.JPEG
+  Reptile\ILSVRC2012_val_00047000.JPEG
+  Vehicle\ILSVRC2012_val_00021717.JPEG
+validation: 1886 photos remain {'Bird': 215, 'Carnivore': 204, 'Dog': 209, 'Fish': 214, 'Insect': 211, 'Instrument': 210, 'Primate': 204, 'Reptile': 205, 'Vehicle': 214}
+test: 161 object photos are left out of all four variants
+test original: 3889 photos kept
+test no_fg: 3889 photos kept
+test mixed_same: 3889 photos kept
+test mixed_rand: 3889 photos kept
+
+Process finished with exit code 0

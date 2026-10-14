@@ -1,0 +1,212 @@
+[
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9835433273335048,
+      "no_fg": 0.6407816919516586,
+      "mixed_same": 0.9465158138338905,
+      "mixed_rand": 0.8979172023656466
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6407816919516586,
+      "bg_gap": 0.048598611468243846,
+      "original_accuracy": 0.9835433273335048
+    },
+    "final_val_accuracy": 0.9809119830328739,
+    "epochs_run": 10,
+    "training_time_in_secs": 1399.001633644104,
+    "best_val_accuracy": 0.9835630965005302
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9845718693751607,
+      "no_fg": 0.6070969400874261,
+      "mixed_same": 0.9496014399588584,
+      "mixed_rand": 0.8950887117510928
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6070969400874261,
+      "bg_gap": 0.05451272820776554,
+      "original_accuracy": 0.9845718693751607
+    },
+    "final_val_accuracy": 0.9782608695652174,
+    "epochs_run": 8,
+    "training_time_in_secs": 1099.4985527992249,
+    "best_val_accuracy": 0.9803817603393425
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 1,
+    "variant_accuracies": {
+      "original": 0.9802005656981229,
+      "no_fg": 0.6374389303162766,
+      "mixed_same": 0.9331447672923631,
+      "mixed_rand": 0.8804319876574955
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6374389303162766,
+      "bg_gap": 0.052712779634867535,
+      "original_accuracy": 0.9802005656981229
+    },
+    "final_val_accuracy": 0.9777306468716861,
+    "epochs_run": 6,
+    "training_time_in_secs": 826.1366662979126,
+    "best_val_accuracy": 0.9787910922587487
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 2,
+    "variant_accuracies": {
+      "original": 0.9848290048855747,
+      "no_fg": 0.6040113139624582,
+      "mixed_same": 0.9395731550527128,
+      "mixed_rand": 0.8799177166366675
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6040113139624582,
+      "bg_gap": 0.05965543841604526,
+      "original_accuracy": 0.9848290048855747
+    },
+    "final_val_accuracy": 0.9793213149522799,
+    "epochs_run": 9,
+    "training_time_in_secs": 1109.2742426395416,
+    "best_val_accuracy": 0.9803817603393425
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "original",
+    "seed": 3,
+    "variant_accuracies": {
+      "original": 0.9835433273335048,
+      "no_fg": 0.6006685523270764,
+      "mixed_same": 0.9316019542298791,
+      "mixed_rand": 0.8758035484700437
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6006685523270764,
+      "bg_gap": 0.05579840575983541,
+      "original_accuracy": 0.9835433273335048
+    },
+    "final_val_accuracy": 0.9772004241781548,
+    "epochs_run": 7,
+    "training_time_in_secs": 848.0333938598633,
+    "best_val_accuracy": 0.9787910922587487
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 0,
+    "variant_accuracies": {
+      "original": 0.9719722293648753,
+      "no_fg": 0.5590125996400103,
+      "mixed_same": 0.9416302391360247,
+      "mixed_rand": 0.9231164823862176
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5590125996400103,
+      "bg_gap": 0.018513756749807153,
+      "original_accuracy": 0.9719722293648753
+    },
+    "final_val_accuracy": 0.9422057264050901,
+    "epochs_run": 4,
+    "training_time_in_secs": 2397.9283204078674,
+    "best_val_accuracy": 0.9538706256627784
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 339,
+    "variant_accuracies": {
+      "original": 0.9735150424273592,
+      "no_fg": 0.608125482129082,
+      "mixed_same": 0.9336590383131911,
+      "mixed_rand": 0.9169452301362818
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.608125482129082,
+      "bg_gap": 0.01671380817690926,
+      "original_accuracy": 0.9735150424273592
+    },
+    "final_val_accuracy": 0.9231177094379639,
+    "epochs_run": 4,
+    "training_time_in_secs": 2406.9326372146606,
+    "best_val_accuracy": 0.957051961823966
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 1,
+    "variant_accuracies": {
+      "original": 0.9709436873232193,
+      "no_fg": 0.5623553612753921,
+      "mixed_same": 0.9478014913859604,
+      "mixed_rand": 0.9377732064798149
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.5623553612753921,
+      "bg_gap": 0.01002828490614549,
+      "original_accuracy": 0.9709436873232193
+    },
+    "final_val_accuracy": 0.9406150583244963,
+    "epochs_run": 5,
+    "training_time_in_secs": 3004.243100643158,
+    "best_val_accuracy": 0.9522799575821845
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 2,
+    "variant_accuracies": {
+      "original": 0.9704294163023913,
+      "no_fg": 0.6122396502957058,
+      "mixed_same": 0.9421445101568526,
+      "mixed_rand": 0.9192594497300077
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.6122396502957058,
+      "bg_gap": 0.022885060426844905,
+      "original_accuracy": 0.9704294163023913
+    },
+    "final_val_accuracy": 0.9422057264050901,
+    "epochs_run": 4,
+    "training_time_in_secs": 2412.720121860504,
+    "best_val_accuracy": 0.9459172852598091
+  },
+  {
+    "architecture": "resnet50",
+    "data_type": "augmented",
+    "seed": 3,
+    "variant_accuracies": {
+      "original": 0.9714579583440474,
+      "no_fg": 0.587297505785549,
+      "mixed_same": 0.9395731550527128,
+      "mixed_rand": 0.9228593468758035
+    },
+    "reliance_metrics": {
+      "chance_accuracy": 0.1111111111111111,
+      "no_fg_accuracy": 0.587297505785549,
+      "bg_gap": 0.01671380817690926,
+      "original_accuracy": 0.9714579583440474
+    },
+    "final_val_accuracy": 0.9390243902439024,
+    "epochs_run": 4,
+    "training_time_in_secs": 2409.7960426807404,
+    "best_val_accuracy": 0.9575821845174973
+  }
+]

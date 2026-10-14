@@ -1,0 +1,115 @@
+C:\Users\minio\PycharmProjects\JupyterProject2\.venv\Scripts\python.exe C:\Users\minio\PycharmProjects\JupyterProject2\data_preparation\data_leakage_check.py 
+Found 72036 images in data\rebuild\in9_train
+Found 1935 images in data\rebuild\in9_val
+Found 4050 images in data\bg_challenge\original
+validation and test have 0 near duplicate images
+training and test have 30 near duplicate images
+    data\rebuild\in9_train\Carnivore\n02115641_4977.JPEG data\bg_challenge\original\val\04_carnivore\n02114712_40677.JPEG 0.0122
+    data\rebuild\in9_train\Carnivore\n02119022_13218.JPEG data\bg_challenge\original\val\04_carnivore\n02120505_48756.JPEG 0.0037
+    data\rebuild\in9_train\Carnivore\n02119022_6285.JPEG data\bg_challenge\original\val\04_carnivore\n02119789_14861.JPEG 0.0026
+    data\rebuild\in9_train\Carnivore\n02119022_825.JPEG data\bg_challenge\original\val\04_carnivore\n02119789_46145.JPEG 0.003
+    data\rebuild\in9_train\Fish\n01484850_24294.JPEG data\bg_challenge\original\val\08_fish\n01491361_10074.JPEG 0.0011
+    data\rebuild\in9_train\Fish\n01491361_4949.JPEG data\bg_challenge\original\val\08_fish\n01491361_07875.JPEG 0.0458
+    data\rebuild\in9_train\Fish\n01496331_19901.JPEG data\bg_challenge\original\val\08_fish\n01498041_14771.JPEG 0.0016
+    data\rebuild\in9_train\Fish\n02640242_4140.JPEG data\bg_challenge\original\val\08_fish\n01496331_04969.JPEG 0.0447
+    data\rebuild\in9_train\Insect\n02206856_4328.JPEG data\bg_challenge\original\val\05_insect\n02190166_16181.JPEG 0.0018
+    data\rebuild\in9_train\Insect\n02231487_13361.JPEG data\bg_challenge\original\val\08_fish\n01496331_11782.JPEG 0.0483
+    data\rebuild\in9_train\Instrument\n03017168_133.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_11960.JPEG 0.0182
+    data\rebuild\in9_train\Instrument\n03017168_16274.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_10239.JPEG 0.0021
+    data\rebuild\in9_train\Instrument\n03017168_19931.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_26287.JPEG 0.0018
+    data\rebuild\in9_train\Instrument\n03017168_20753.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_41770.JPEG 0.0253
+    data\rebuild\in9_train\Instrument\n03017168_21399.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_07707.JPEG 0.0097
+    data\rebuild\in9_train\Instrument\n03017168_38554.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_22378.JPEG 0.021
+    data\rebuild\in9_train\Instrument\n03017168_4453.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_36448.JPEG 0.0039
+    data\rebuild\in9_train\Instrument\n03017168_5320.JPEG data\bg_challenge\original\val\06_musical instrument\n03447721_24104.JPEG 0.0025
+    data\rebuild\in9_train\Instrument\n03447721_23111.JPEG data\bg_challenge\original\val\06_musical instrument\n03017168_31205.JPEG 0.0023
+    data\rebuild\in9_train\Instrument\n04515003_2859.JPEG data\bg_challenge\original\val\06_musical instrument\n03452741_29952.JPEG 0.0009
+    data\rebuild\in9_train\Primate\n02484975_3080.JPEG data\bg_challenge\original\val\07_primate\n02493793_37219.JPEG 0.0021
+    data\rebuild\in9_train\Primate\n02493509_1392.JPEG data\bg_challenge\original\val\07_primate\n02494079_12384.JPEG 0.0007
+    data\rebuild\in9_train\Primate\n02494079_1946.JPEG data\bg_challenge\original\val\07_primate\n02493793_39302.JPEG 0.0015
+    data\rebuild\in9_train\Primate\n02500267_3820.JPEG data\bg_challenge\original\val\07_primate\n02497673_39583.JPEG 0.0038
+    data\rebuild\in9_train\Reptile\n01693334_2905.JPEG data\bg_challenge\original\val\03_reptile\n01682714_39749.JPEG 0.0017
+    data\rebuild\in9_train\Reptile\n01740131_10158.JPEG data\bg_challenge\original\val\03_reptile\n01729322_33392.JPEG 0.006
+    data\rebuild\in9_train\Reptile\n01742172_2931.JPEG data\bg_challenge\original\val\03_reptile\n01740131_21093.JPEG 0.0015
+    data\rebuild\in9_train\Reptile\n01751748_8170.JPEG data\bg_challenge\original\val\08_fish\n01496331_11782.JPEG 0.0439
+    data\rebuild\in9_train\Reptile\n01753488_11834.JPEG data\bg_challenge\original\val\03_reptile\n01756291_47061.JPEG 0.0025
+    data\rebuild\in9_train\Reptile\n01756291_30213.JPEG data\bg_challenge\original\val\03_reptile\n01753488_33125.JPEG 0.0018
+validation and training have 14 near duplicate images
+    data\rebuild\in9_val\Carnivore\ILSVRC2012_val_00016283.JPEG data\rebuild\in9_train\Carnivore\n02137549_6262.JPEG -0.0
+    data\rebuild\in9_val\Carnivore\ILSVRC2012_val_00018821.JPEG data\rebuild\in9_train\Carnivore\n02119022_1348.JPEG 0.0
+    data\rebuild\in9_val\Carnivore\ILSVRC2012_val_00036622.JPEG data\rebuild\in9_train\Carnivore\n02128385_6919.JPEG 0.0
+    data\rebuild\in9_val\Carnivore\ILSVRC2012_val_00045465.JPEG data\rebuild\in9_train\Carnivore\n02119789_11101.JPEG 0.0082
+    data\rebuild\in9_val\Fish\ILSVRC2012_val_00045925.JPEG data\rebuild\in9_train\Fish\n01494475_8260.JPEG 0.0421
+    data\rebuild\in9_val\Insect\ILSVRC2012_val_00020464.JPEG data\rebuild\in9_train\Insect\n02236044_12875.JPEG 0.0
+    data\rebuild\in9_val\Insect\ILSVRC2012_val_00022765.JPEG data\rebuild\in9_train\Insect\n02264363_7312.JPEG 0.0
+    data\rebuild\in9_val\Instrument\ILSVRC2012_val_00016449.JPEG data\rebuild\in9_train\Instrument\n04536866_6108.JPEG -0.0
+    data\rebuild\in9_val\Primate\ILSVRC2012_val_00011032.JPEG data\rebuild\in9_train\Primate\n02492660_4551.JPEG 0.0
+    data\rebuild\in9_val\Primate\ILSVRC2012_val_00013754.JPEG data\rebuild\in9_train\Primate\n02492035_5358.JPEG -0.0
+    data\rebuild\in9_val\Primate\ILSVRC2012_val_00046571.JPEG data\rebuild\in9_train\Primate\n02486261_2775.JPEG 0.0
+    data\rebuild\in9_val\Reptile\ILSVRC2012_val_00014768.JPEG data\rebuild\in9_train\Reptile\n01693334_15242.JPEG 0.0
+    data\rebuild\in9_val\Reptile\ILSVRC2012_val_00028042.JPEG data\rebuild\in9_train\Reptile\n01693334_8937.JPEG -0.0
+    data\rebuild\in9_val\Vehicle\ILSVRC2012_val_00021717.JPEG data\rebuild\in9_train\Vehicle\n02814533_12546.JPEG -0.0
+There are 29 possible duplicate photos in the training and validation sets that could create leakage
+Deleting 44 files
+  rebuild\in9_train\Carnivore\n02115641_4977.JPEG
+  rebuild\in9_train\Carnivore\n02119022_13218.JPEG
+  rebuild\in9_train\Carnivore\n02119022_1348.JPEG
+  rebuild\in9_train\Carnivore\n02119022_6285.JPEG
+  rebuild\in9_train\Carnivore\n02119022_825.JPEG
+  rebuild\in9_train\Carnivore\n02119789_11101.JPEG
+  rebuild\in9_train\Carnivore\n02128385_6919.JPEG
+  rebuild\in9_train\Carnivore\n02137549_6262.JPEG
+  rebuild\in9_train\Fish\n01484850_24294.JPEG
+  rebuild\in9_train\Fish\n01491361_4949.JPEG
+  rebuild\in9_train\Fish\n01494475_8260.JPEG
+  rebuild\in9_train\Fish\n01496331_19901.JPEG
+  rebuild\in9_train\Fish\n02640242_4140.JPEG
+  rebuild\in9_train\Insect\n02206856_4328.JPEG
+  rebuild\in9_train\Insect\n02231487_13361.JPEG
+  rebuild\in9_train\Insect\n02236044_12875.JPEG
+  rebuild\in9_train\Insect\n02264363_7312.JPEG
+  rebuild\in9_train\Instrument\n03017168_133.JPEG
+  rebuild\in9_train\Instrument\n03017168_16274.JPEG
+  rebuild\in9_train\Instrument\n03017168_19931.JPEG
+  rebuild\in9_train\Instrument\n03017168_20753.JPEG
+  rebuild\in9_train\Instrument\n03017168_21399.JPEG
+  rebuild\in9_train\Instrument\n03017168_38554.JPEG
+  rebuild\in9_train\Instrument\n03017168_4453.JPEG
+  rebuild\in9_train\Instrument\n03017168_5320.JPEG
+  rebuild\in9_train\Instrument\n03447721_23111.JPEG
+  rebuild\in9_train\Instrument\n04515003_2859.JPEG
+  rebuild\in9_train\Instrument\n04536866_6108.JPEG
+  rebuild\in9_train\Primate\n02484975_3080.JPEG
+  rebuild\in9_train\Primate\n02486261_2775.JPEG
+  rebuild\in9_train\Primate\n02492035_5358.JPEG
+  rebuild\in9_train\Primate\n02492660_4551.JPEG
+  rebuild\in9_train\Primate\n02493509_1392.JPEG
+  rebuild\in9_train\Primate\n02494079_1946.JPEG
+  rebuild\in9_train\Primate\n02500267_3820.JPEG
+  rebuild\in9_train\Reptile\n01693334_15242.JPEG
+  rebuild\in9_train\Reptile\n01693334_2905.JPEG
+  rebuild\in9_train\Reptile\n01693334_8937.JPEG
+  rebuild\in9_train\Reptile\n01740131_10158.JPEG
+  rebuild\in9_train\Reptile\n01742172_2931.JPEG
+  rebuild\in9_train\Reptile\n01751748_8170.JPEG
+  rebuild\in9_train\Reptile\n01753488_11834.JPEG
+  rebuild\in9_train\Reptile\n01756291_30213.JPEG
+  rebuild\in9_train\Vehicle\n02814533_12546.JPEG
+
+Process finished with exit code 0
+
+:\Users\minio\PycharmProjects\JupyterProject2\.venv\Scripts\python.exe C:\Users\minio\PycharmProjects\JupyterProject2\data_preparation\data_leakage_check.py 
+Found 71992 images in data\rebuild\in9_train
+Found 1935 images in data\rebuild\in9_val
+Found 4050 images in data\bg_challenge\original
+validation and test have 0 near duplicate images
+training and test have 0 near duplicate images
+validation and training have 2 near duplicate images
+    data\rebuild\in9_val\Fish\ILSVRC2012_val_00045925.JPEG data\rebuild\in9_train\Fish\n01484850_45289.JPEG 0.0473
+    data\rebuild\in9_val\Primate\ILSVRC2012_val_00011032.JPEG data\rebuild\in9_train\Primate\n02494079_3522.JPEG 0.0
+There are 0 possible duplicate photos in the training and validation sets that could create leakage
+Deleting 2 files
+  rebuild\in9_train\Fish\n01484850_45289.JPEG
+  rebuild\in9_train\Primate\n02494079_3522.JPEG
+
+Process finished with exit code 0
