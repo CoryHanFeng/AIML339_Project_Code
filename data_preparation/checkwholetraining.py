@@ -16,6 +16,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
+# Only ZIP_PATH needs editing; the other paths are built from where this file is saved
 ZIP_PATH = Path(r"E:\ILSVRC.zip")
 # Paths are built from where this file is saved, so it can be run from any folder
 ROOT = Path(__file__).resolve().parent.parent

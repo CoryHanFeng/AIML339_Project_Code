@@ -7,8 +7,9 @@ The dataset I used can be distributed only to the teaching team if needed, as th
 
 A smaller ViT-S/16 model was trained on the same dataset, which has a much closer parameter count to the ResNet-50, it also was decided to be used to check whether model size would contribute to background reliance.
 
-(Note: Unfortunately, I misclicked on the stop kernel button and deleted all the printouts from each cell in the ViT notebook, this applied only to the main ViT-B/16, and the results can still be viewed inside of the runs_10_epochs folder)
-(Note: Figures containing ImageNet or backgrounds challenge are not included, per the imagenet terms)
+(Note: Unfortunately, I misclicked on the stop kernel button and deleted all the printouts from each cell in the ViT notebook, this applied only to the main ViT-B/16, and the results can still be viewed inside of the runs_10_epochs folder)  
+(Note: Figures containing ImageNet or backgrounds challenge are not included, per the imagenet terms)  
+(Note: The original GitHub repository is not included, as it contains pieces of the original dataset, the course coordinator has been informed and that original repository will be shared on request)
 ---
 # **Project Files**
 ### **Data/**
@@ -131,7 +132,7 @@ At the end of every run the model is evaluated on four background challenge test
 - No-FG Accuracy: Accuracy when the object is removed. Chance is 11% (1/9), an accuracy above that shows how much the model can classify from background alone
 - BG-Gap Accuracy: Accuracy difference between Mixed-Same and Mixed-Random, which shows how much the prediction changes when the background comes from a different class.
 ---
-- TEST_INSTANCES is the constant that defines the test set, bg_challenge is the full test set, however it has overlapping images with the training set, so checkwholetraining.py finds the near-duplicates and dataset_filtering.py removes them to make bg_challenge_clean.
+- TEST_INSTANCES is the constant that defines the test set, bg_challenge is the full test set, however, some of its images have near-duplicates in the ImageNet-1k training data the models were pretrained on, so checkwholetraining.py finds the near-duplicates and dataset_filtering.py removes them to make bg_challenge_clean.
 - The summary cell averages the saved results over seeds.
 - The inference time counter is used to calculate the inference time and peak GPU memory on random input with a batch of 32.
 ---
@@ -163,5 +164,3 @@ Settings:
 - Gradient Clipping: norm 1.0
 - Epochs: up to 10
 - Early Stopping: 3 on Validation Accuracy
-
-
